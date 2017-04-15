@@ -1,0 +1,53 @@
+== README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.
+
+
+Install Required Packages
+# yum install gcc-c++ patch readline readline-devel zlib zlib-devel
+# yum install libyaml-devel libffi-devel openssl-devel make
+# yum install bzip2 autoconf automake libtool bison iconv-devel sqlite-devel
+
+Install RVM
+# curl -sSL https://rvm.io/mpapis.asc | gpg --import -
+# curl -L get.rvm.io | bash -s stable
+
+
+# source /etc/profile.d/rvm.sh
+# rvm reload
+
+Verify Dependencies
+# rvm requirements run
+
+Install Ruby 2.2
+#rvm install 2.2.4
+
+gemset creation
+rvm gemset create rails410
+rvm 2.2.4@rails410
+gem install rails -v 4.1.0

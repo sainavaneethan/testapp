@@ -10,7 +10,7 @@ class RoomsHelperTest < ActionView::TestCase
   	test "check output length" do
     	result = get_result
     	result_input1 = get_result("input1.txt")
-    	assert_equal(result.length , 4 , "Not equal")
+    	assert_equal(result.length , 6 , "Not equal")
     	assert_equal(result_input1.length , 1 , "Not equal")
   	end
 

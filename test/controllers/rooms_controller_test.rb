@@ -10,7 +10,7 @@ class RoomsControllerTest < ActionController::TestCase
   	get :index
 	assert_select 'title', "Testapp"
 	assert_select "p" , 1
-	assert_select "p > br", 4
+	assert_select "p > br", 6
   end
 
 end

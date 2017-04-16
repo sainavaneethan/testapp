@@ -7,6 +7,12 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'rooms#index'
 
+  resources :rooms do
+    collection do
+      post 'file_upload'
+    end
+  end
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

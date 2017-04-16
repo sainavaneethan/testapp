@@ -1,6 +1,12 @@
 <h1></h1>
-<p>
-<%  @result.each do |res| %>
-  <%= res %> <br />
-<% end%>
-</p>
+
+<%= render :partial => 'bind_result',  :locals => {:result => @result} %>
+
+<%=form_tag(file_upload_rooms_path, method: :post, id: :test_plan_form, multipart: :true) do%>
+
+<label for="file">Upload your file </label>
+
+ <%= file_field_tag "file" , accept: "text/plain" %>
+  <%= submit_tag "Upload" %>
+
+<% end %>
